@@ -88,9 +88,21 @@
           "options": {
             "browserTarget": "container:build"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "container"
+  "defaultProject": "container",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
