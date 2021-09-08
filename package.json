@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "ng lint"
+    "format": "prettier --check \"./**\"",
+    "format:fix": "prettier --write \"./**\"",
+    "lint": "yarn format && ng lint"
   },
   "private": true,
   "dependencies": {
@@ -40,6 +42,7 @@
     "eslint": "^7.26.0",
     "jest": "^27.1.0",
     "jest-preset-angular": "^9.0.7",
+    "prettier": "^2.3.2",
     "typescript": "~4.3.5"
   }
 }

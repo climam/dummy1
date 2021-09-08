@@ -1,0 +1,11 @@
+.gitignore
+.prettierignore
+.browserslistrc
+.gitkeep
+*.ico
+yarn.lock
+yarn-error.log
+LICENSE
+*.ejs
+dist
+coverage
