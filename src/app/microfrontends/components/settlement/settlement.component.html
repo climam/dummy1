@@ -1,0 +1,8 @@
+<div id="content">
+  <ng-template [ngIf]="loaded | async" [ngIfElse]="notLoaded">
+    <mf-settlement> </mf-settlement>
+  </ng-template>
+  <ng-template #notLoaded>
+    <div>LOADING</div>
+  </ng-template>
+</div>

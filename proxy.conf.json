@@ -1,0 +1,10 @@
+{
+  "/mf/settlement": {
+    "target": "http://localhost:4201/",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/mf/settlement": ""
+    }
+  }
+}
